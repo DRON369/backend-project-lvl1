@@ -2,7 +2,7 @@
 install:
 	npm ci
 
-# Run ganes
+# Run games
 brain-games:
 	node bin/brain-games.js
 
