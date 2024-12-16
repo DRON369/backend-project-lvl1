@@ -15,7 +15,7 @@ function brainEven(username) {
       score += 1;
       console.log('Correct!');
     } else {
-      console.log(`'${answer} is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${username}!`);
       break;
     }
