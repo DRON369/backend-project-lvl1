@@ -9,3 +9,7 @@ brain-games:
 # Publish package on local
 publish:
 	npm publish --dry-run
+
+# Check project with eslint
+lint:
+	npx eslint .
