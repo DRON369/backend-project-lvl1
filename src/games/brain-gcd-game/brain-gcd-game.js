@@ -5,8 +5,8 @@ import runGame from '../../index.js';
 import getGcdOfTwoNumbers from '../../common/get-gcd-of-two-numers.js';
 
 const getRoundData = () => {
-  const firstNumber = getRandomNumber(0, 10);
-  const secondNumber = getRandomNumber(0, 20);
+  const firstNumber = getRandomNumber(1, 10);
+  const secondNumber = getRandomNumber(1, 20);
 
   const answer = getGcdOfTwoNumbers(firstNumber, secondNumber);
   const question = `Question: ${firstNumber} ${secondNumber}`;
