@@ -9,16 +9,18 @@ function getGcdOfTwoNumbers(a, b) {
     return a;
   }
   let greater = Math.max(a, b);
-  const smaller = Math.min(a, b);
+  let smaller = Math.min(a, b);
 
   if (greater % smaller === 0) {
     return smaller;
   }
   while (greater > smaller) {
-    greater -= smaller;
-    if (greater % smaller === 0) {
+    const remainder = greater % smaller;
+    if (remainder === 0) {
       return smaller;
     }
+    greater = smaller;
+    smaller = remainder;
   }
   return 1;
 }
