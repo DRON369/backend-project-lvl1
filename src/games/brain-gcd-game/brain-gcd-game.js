@@ -9,7 +9,7 @@ const getRoundData = () => {
   const secondNumber = getRandomNumber(0, 20);
 
   const answer = getGcdOfTwoNumbers(firstNumber, secondNumber);
-  const question = `Question: ${firstNumber} ${secondNumber} (${answer}))`;
+  const question = `Question: ${firstNumber} ${secondNumber}`;
 
   return [question, answer.toString()];
 };
