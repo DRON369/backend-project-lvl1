@@ -6,12 +6,12 @@ import getRandomNumber from '../../common/generate-random-number.js';
 
 const getRoundData = () => {
   const progression = generateProgression();
-  const secretIndex = getRandomNumber(0, progression.length);
+  const secretIndex = getRandomNumber(0, progression.length - 1);
   const answer = progression[secretIndex];
   progression.splice(secretIndex, 1, '..');
   const question = `Question: ${progression.join(' ')}`;
 
-  return [question, answer.toString()];
+  return [question, answer?.toString()];
 };
 
 const isAnswerCorrect = (answer, userAnswer) => +answer === +userAnswer;
