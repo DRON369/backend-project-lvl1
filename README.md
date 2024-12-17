@@ -12,3 +12,6 @@
 
 ### Demo brain-gcd game
 [![asciicast](https://asciinema.org/a/WBYGI6vnlnE0pjSQlo4VQic7V.svg)](https://asciinema.org/a/WBYGI6vnlnE0pjSQlo4VQic7V)
+
+### Demo brain-progression game
+[![asciicast](https://asciinema.org/a/mwB1RIqo4DsrqPJNeRXlHIl2V.svg)](https://asciinema.org/a/mwB1RIqo4DsrqPJNeRXlHIl2V)

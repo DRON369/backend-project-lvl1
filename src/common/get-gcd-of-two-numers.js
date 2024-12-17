@@ -1,3 +1,9 @@
+/**
+ * Функция для нахождения НОД двух целых чисел
+ * @param {number} a Первое числов
+ * @param {number} b Второе число
+ * @returns {number} НОД заданных чисел
+ */
 function getGcdOfTwoNumbers(a, b) {
   if (a === b) {
     return a;
