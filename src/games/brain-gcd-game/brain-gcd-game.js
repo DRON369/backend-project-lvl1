@@ -2,25 +2,26 @@
 import getRandomNumber from '../../common/generate-random-number.js';
 import greeting from '../../../bin/cli.js';
 import runGame from '../../index.js';
+import getGcdOfTwoNumbers from '../../common/get-gcd-of-two-numers.js';
 
 const getRoundData = () => {
   const firstNumber = getRandomNumber(0, 10);
-  const secondNumber = getRandomNumber(0, 10);
+  const secondNumber = getRandomNumber(0, 20);
 
-  const question = `Question: ${firstNumber} + ${secondNumber}`;
-  const answer = firstNumber + secondNumber;
+  const answer = getGcdOfTwoNumbers(firstNumber, secondNumber);
+  const question = `Question: ${firstNumber} ${secondNumber} (${answer}))`;
 
   return [question, answer.toString()];
 };
 
 const isAnswerCorrect = (answer, userAnswer) => +answer === +userAnswer;
 
-function brainCalcGame() {
+function brainGcdGame() {
   const username = greeting();
-  const gameCondition = 'What is the result of the expression?';
+  const gameCondition = 'Find the greatest common divisor of given numbers.';
 
   console.log(gameCondition);
   runGame(username, getRoundData, isAnswerCorrect);
 }
 
-export default brainCalcGame;
+export default brainGcdGame;

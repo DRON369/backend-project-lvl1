@@ -11,7 +11,7 @@ const getRoundData = () => {
   return [question, answer];
 };
 
-const isAnswerCorrect = (answer, userAnser) => answer === userAnser;
+const isAnswerCorrect = (answer, userAnswer) => answer === userAnswer;
 
 function brainEvenGame() {
   const username = greeting();
