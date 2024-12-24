@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "Package BrainGame with six console games for charge you brain :)",
+  "description": "Package BrainGame with five console games for charge you brain :)",
   "main": "index.js",
   "type": "module",
   "scripts": {
