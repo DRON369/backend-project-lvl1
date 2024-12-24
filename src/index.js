@@ -1,7 +1,10 @@
 import readlineSync from 'readline-sync';
 import ROUNDS_COUNT from './constants.js';
+import greeting from '../bin/cli.js';
 
-function runGame(username, getRoundData, isAnswerCorrect) {
+function runGame(gameCondition, getRoundData, isAnswerCorrect) {
+  const username = greeting();
+  console.log(gameCondition);
   let score = 0;
   for (let i = 0; i < ROUNDS_COUNT; i += 1) {
     const [question, answer] = getRoundData();

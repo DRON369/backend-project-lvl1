@@ -1,5 +1,4 @@
 import getRandomNumber from '../../common/generate-random-number.js';
-import greeting from '../../../bin/cli.js';
 import runGame from '../../index.js';
 
 const getRoundData = () => {
@@ -13,12 +12,10 @@ const getRoundData = () => {
 
 const isAnswerCorrect = (answer, userAnswer) => answer === userAnswer;
 
-function brainEvenGame() {
-  const username = greeting();
+function runBrainEvenGame() {
   const gameCondition = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-  console.log(gameCondition);
-  runGame(username, getRoundData, isAnswerCorrect);
+  runGame(gameCondition, getRoundData, isAnswerCorrect);
 }
 
-export default brainEvenGame;
+export default runBrainEvenGame;

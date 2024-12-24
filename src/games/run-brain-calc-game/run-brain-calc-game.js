@@ -1,6 +1,4 @@
-// import readlineSync from 'readline-sync';
 import getRandomNumber from '../../common/generate-random-number.js';
-import greeting from '../../../bin/cli.js';
 import runGame from '../../index.js';
 
 const getRoundData = () => {
@@ -15,12 +13,10 @@ const getRoundData = () => {
 
 const isAnswerCorrect = (answer, userAnswer) => +answer === +userAnswer;
 
-function brainCalcGame() {
-  const username = greeting();
+function runBrainCalcGame() {
   const gameCondition = 'What is the result of the expression?';
 
-  console.log(gameCondition);
-  runGame(username, getRoundData, isAnswerCorrect);
+  runGame(gameCondition, getRoundData, isAnswerCorrect);
 }
 
-export default brainCalcGame;
+export default runBrainCalcGame;

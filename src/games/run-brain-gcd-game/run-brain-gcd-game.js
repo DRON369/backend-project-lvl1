@@ -1,6 +1,4 @@
-// import readlineSync from 'readline-sync';
 import getRandomNumber from '../../common/generate-random-number.js';
-import greeting from '../../../bin/cli.js';
 import runGame from '../../index.js';
 import getGcdOfTwoNumbers from '../../common/get-gcd-of-two-numers.js';
 
@@ -16,12 +14,10 @@ const getRoundData = () => {
 
 const isAnswerCorrect = (answer, userAnswer) => +answer === +userAnswer;
 
-function brainGcdGame() {
-  const username = greeting();
+function runBrainGcdGame() {
   const gameCondition = 'Find the greatest common divisor of given numbers.';
 
-  console.log(gameCondition);
-  runGame(username, getRoundData, isAnswerCorrect);
+  runGame(gameCondition, getRoundData, isAnswerCorrect);
 }
 
-export default brainGcdGame;
+export default runBrainGcdGame;

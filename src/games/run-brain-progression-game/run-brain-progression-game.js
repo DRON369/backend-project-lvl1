@@ -1,5 +1,3 @@
-// import readlineSync from 'readline-sync';
-import greeting from '../../../bin/cli.js';
 import runGame from '../../index.js';
 import generateProgression from '../../common/generate-progression.js';
 import getRandomNumber from '../../common/generate-random-number.js';
@@ -16,12 +14,10 @@ const getRoundData = () => {
 
 const isAnswerCorrect = (answer, userAnswer) => +answer === +userAnswer;
 
-function brainProgressionGame() {
-  const username = greeting();
+function runBrainProgressionGame() {
   const gameCondition = 'What number is missing in the progression?';
 
-  console.log(gameCondition);
-  runGame(username, getRoundData, isAnswerCorrect);
+  runGame(gameCondition, getRoundData, isAnswerCorrect);
 }
 
-export default brainProgressionGame;
+export default runBrainProgressionGame;
