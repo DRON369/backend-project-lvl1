@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/DRON369/backend-project-lvl1/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/DRON369/backend-project-lvl1/actions)",
+  "description": "Package BrainGame with six console games for charge you brain :)",
   "main": "index.js",
   "type": "module",
   "scripts": {
